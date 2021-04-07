@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="139px" viewBox="0 0 139 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LOGO1" transform="translate(-226.000000, -38.000000)">
+            <g id="编组" transform="translate(228.000000, 40.000000)">
+                <path d="M18,96.5 C42.8528137,96.5 63,83.2924001 63,67 C63,50.7075999 42.8528137,37.5 18,37.5" id="路径" stroke="#A43BD4" stroke-width="4"></path>
+                <path d="M66,96.5 C90.8528137,96.5 111,83.2924001 111,67 C111,50.7075999 90.8528137,37.5 66,37.5" id="路径" stroke="#A43BD4" stroke-width="4" transform="translate(88.500000, 67.000000) scale(-1, 1) translate(-88.500000, -67.000000) "></path>
+                <polygon id="三角形" fill="#A43BD4" transform="translate(113.500000, 38.000000) rotate(90.000000) translate(-113.500000, -38.000000) " points="113.5 34 120 42 107 42"></polygon>
+                <polygon id="三角形" fill="#A43BD4" transform="translate(113.500000, 97.000000) rotate(90.000000) translate(-113.500000, -97.000000) " points="113.5 93 120 101 107 101"></polygon>
+                <path d="M67.5,135 C104.779221,135 135,104.779221 135,67.5 C135,30.2207794 104.779221,0 67.5,0 C40.7758542,0 17.679003,15.530294 6.74228268,38.0580454 C2.42267215,46.9556957 0,56.9449251 0,67.5 C0,78.0172774 2.40535216,87.9727547 6.69595042,96.8463258 C17.6136759,119.425744 40.7380568,135 67.5,135 Z" id="椭圆形" stroke="#A43BD4" stroke-width="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>
