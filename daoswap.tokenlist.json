@@ -1,40 +1,40 @@
 {
   "name": "Daoswap",
-  "logoURI": "https://rinkeby-app.daoswap.global/daoswap.svg",
+  "logoURI": "https://heco-app.daoswap.global/daoswap.svg",
   "keywords": ["defi", "doi"],
-  "timestamp": "2020-10-16T01:40:34.305Z",
+  "timestamp": "2021-04-15T01:40:34.305Z",
   "tokens": [
     {
-      "chainId": 4,
-      "address": "0x29Ac4ed3Ad8457B6Fb75B336D688C9094AD08B4b",
-      "name": "Daoswap",
-      "symbol": "DOI",
+      "chainId": 256,
+      "address": "0x60d64Ef311a4F0E288120543A14e7f90E76304c6",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
       "decimals": 18,
-      "logoURI": "https://rinkeby-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
     },
     {
-      "chainId": 4,
-      "address": "0x1599A352A39eb03777A1eB508eF80D17743C196D",
-      "name": "DaoswapNTC",
-      "symbol": "NTC",
-      "decimals": 18,
-      "logoURI": "https://rinkeby-app.daoswap.global/daoswap.svg"
+      "chainId": 256,
+      "address": "0xd459Dad367788893c17c09e17cFBF0bf25c62833",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
     },
     {
-      "chainId": 4,
-      "address": "0xCAd7A229D56245fFaBF2D8D1aCfA8c2D64cFBe2f",
-      "name": "Daoswap Test Coin 1",
-      "symbol": "DTC1",
-      "decimals": 18,
-      "logoURI": "https://rinkeby-app.daoswap.global/daoswap.svg"
+      "chainId": 256,
+      "address": "0x04F535663110A392A6504839BEeD34E019FdB4E0",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
     },
     {
-      "chainId": 4,
-      "address": "0x3032588C9B8aAc3F9C9e495426f0D8dF37eb0344",
-      "name": "Daoswap Test Coin 2",
-      "symbol": "DTC2",
+      "chainId": 256,
+      "address": "0x8Dd66eefEF4B503EB556b1f50880Cc04416B916B",
+      "name": "Heco-Peg HUSD Token",
+      "symbol": "HUSD",
       "decimals": 18,
-      "logoURI": "https://rinkeby-app.daoswap.global/daoswap.svg"
+      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
     }
   ],
   "version": { "major": 0, "minor": 0, "patch": 0 }
