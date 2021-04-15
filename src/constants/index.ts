@@ -22,22 +22,22 @@ export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C
 
 // TODO:Daoswap UNI -> DOI
 // TODO:Daoswap 添加 Rinkeby 链上的代币信息
-export const NTC_TESTNET = new Token(
-  ChainId.TESTNET,
+export const NTC_RINKEBY = new Token(
+  ChainId.RINKEBY,
   '0x1599A352A39eb03777A1eB508eF80D17743C196D',
   18,
   'NTC',
   'Noodles Test Coin'
 )
-export const DTC1_TESTNET = new Token(
-  ChainId.TESTNET,
+export const DTC1_RINKEBY = new Token(
+  ChainId.RINKEBY,
   '0xCAd7A229D56245fFaBF2D8D1aCfA8c2D64cFBe2f',
   18,
   'DTC1',
   'Daoswap Test Coin 1'
 )
-export const DTC2_TESTNET = new Token(
-  ChainId.TESTNET,
+export const DTC2_RINKEBY = new Token(
+  ChainId.RINKEBY,
   '0x3032588C9B8aAc3F9C9e495426f0D8dF37eb0344',
   18,
   'DTC2',
@@ -58,7 +58,12 @@ export const DOI_ADDRESS = UNI_ADDRESS
 export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   // TODO:Daoswap 代替UNI的代币信息
-  [ChainId.TESTNET]: new Token(ChainId.TESTNET, UNI_ADDRESS, 18, 'DOI', 'Daoswap')
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'DOI', 'Daoswap'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.HECO_MAINNET]: new Token(ChainId.HECO_MAINNET, UNI_ADDRESS, 18, 'DOI', 'Daoswap'),
+  [ChainId.HECO_TESTNET]: new Token(ChainId.HECO_TESTNET, UNI_ADDRESS, 18, 'DOI', 'Daoswap')
 }
 
 export const COMMON_CONTRACT_NAMES: { [address: string]: string } = {
@@ -74,7 +79,12 @@ export const MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.TESTNET]: [WETH[ChainId.TESTNET]]
+  [ChainId.ROPSTEN]: [WETH[ChainId.ROPSTEN]],
+  [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
+  [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
+  [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
+  [ChainId.HECO_MAINNET]: [WETH[ChainId.HECO_MAINNET]],
+  [ChainId.HECO_TESTNET]: [WETH[ChainId.HECO_TESTNET]]
 }
 
 // used to construct intermediary pairs for trading

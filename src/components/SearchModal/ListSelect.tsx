@@ -343,7 +343,7 @@ export function ListSelect({ onDismiss, onBack }: { onDismiss: () => void; onBac
           {t('Add a list')}{' '}
           <QuestionHelper
             text={t(
-              'Token lists are an open specification for lists of ERC20 tokens. You can use any token list by entering its URL below. Beware that third party token lists can contain fake or malicious ERC20 tokens.'
+              'Token lists are an open specification for lists of HRC20 tokens. You can use any token list by entering its URL below. Beware that third party token lists can contain fake or malicious HRC20 tokens.'
             )}
           />
         </Text>

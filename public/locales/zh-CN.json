@@ -170,7 +170,7 @@
   "Select a list": "选择一个列表",
   "Manage Lists": "管理列表",
   "Add a list": "添加一个列表",
-  "Token lists are an open specification for lists of ERC20 tokens. You can use any token list by entering its URL below. Beware that third party token lists can contain fake or malicious ERC20 tokens.": "令牌列表是ERC20令牌列表的开放规范。您可以通过在下面输入其URL来使用任何令牌列表。请注意，第三方令牌列表可能包含虚假或恶意的ERC20令牌。",
+  "Token lists are an open specification for lists of HRC20 tokens. You can use any token list by entering its URL below. Beware that third party token lists can contain fake or malicious HRC20 tokens.": "令牌列表是HRC20令牌列表的开放规范。您可以通过在下面输入其URL来使用任何令牌列表。请注意，第三方令牌列表可能包含虚假或恶意的HRC20令牌。",
   "Add": "添加",
   "Browse lists": "浏览列表",
   "Please confirm you would like to remove this list by typing REMOVE": "请键入“REMOVE”确认您要删除此列表",

@@ -1,12 +1,12 @@
 describe('Add Liquidity', () => {
   it('loads the two correct tokens', () => {
-    cy.visit('/add/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85-0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836')
+    cy.visit('/add/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85-0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2')
     cy.get('#add-liquidity-input-tokena .token-symbol-container').should('contain.text', 'MKR')
     cy.get('#add-liquidity-input-tokenb .token-symbol-container').should('contain.text', 'ETH')
   })
 
   it('does not crash if ETH is duplicated', () => {
-    cy.visit('/add/0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836-0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836')
+    cy.visit('/add/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2-0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2')
     cy.get('#add-liquidity-input-tokena .token-symbol-container').should('contain.text', 'ETH')
     cy.get('#add-liquidity-input-tokenb .token-symbol-container').should('not.contain.text', 'ETH')
   })
@@ -33,18 +33,18 @@ describe('Add Liquidity', () => {
   })
 
   it('redirects /add/WETH-token to /add/WETH-address/token', () => {
-    cy.visit('/add/0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836-0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85')
+    cy.visit('/add/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2-0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85')
     cy.url().should(
       'contain',
-      '/add/0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85'
+      '/add/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85'
     )
   })
 
   it('redirects /add/token-WETH to /add/token/WETH-address', () => {
-    cy.visit('/add/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85-0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836')
+    cy.visit('/add/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85-0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2')
     cy.url().should(
       'contain',
-      '/add/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85/0x7aF326B6351C8A9b8fb8CD205CBe11d4Ac5FA836'
+      '/add/0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
     )
   })
 })

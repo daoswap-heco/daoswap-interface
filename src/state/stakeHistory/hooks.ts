@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 // TODO:Daoswap ERC20
 // import { DAI, DOI_ROPSTEN, UNI, USDC, USDT, WBTC } from '../../constants'
 // import { UNI, NTC_RINKEBY, DTC1_RINKEBY, DTC2_RINKEBY } from '../../constants'
-import { UNI, DTC1_TESTNET } from '../../constants'
+import { UNI, DTC1_RINKEBY } from '../../constants'
 // import { UNI } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
@@ -44,7 +44,7 @@ export const STAKING_REWARDS_INFO: {
   //   }
   // ],
   // TODO:Daoswap 配置奖励池
-  [ChainId.TESTNET]: [
+  [ChainId.RINKEBY]: [
     // {
     //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
     //   stakingRewardAddress: '0xddD330E6EbF40E8f1C8C5B8dfDf41C2113892E04'
@@ -79,7 +79,7 @@ export const STAKING_REWARDS_INFO: {
     //   stakingRewardAddress: '0x0E5DA7Cba443Ea3989c610194c0ee01F053b0505'
     // }
     {
-      tokens: [WETH[ChainId.TESTNET], DTC1_TESTNET],
+      tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
       stakingRewardAddress: '0x1097394f70E32EECf3160276011F3d188AA4465a'
     }
   ]

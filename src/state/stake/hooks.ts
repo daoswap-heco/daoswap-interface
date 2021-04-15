@@ -44,7 +44,7 @@ export const STAKING_REWARDS_INFO: {
   //   }
   // ],
   // TODO:Daoswap 配置奖励池
-  [ChainId.TESTNET]: [
+  [ChainId.RINKEBY]: [
     // {
     //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
     //   stakingRewardAddress: '0xddD330E6EbF40E8f1C8C5B8dfDf41C2113892E04'
