@@ -1,11 +1,11 @@
-// import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@daoswap-heco/daoswap-sdk'
-import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswap-heco/daoswap-sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@daoswap-heco/daoswap-sdk'
+// import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswap-heco/daoswap-sdk'
 import { useMemo } from 'react'
 // TODO:Daoswap ERC20
 // import { DAI, DOI_ROPSTEN, UNI, USDC, USDT, WBTC } from '../../constants'
 // import { UNI, NTC_RINKEBY, DTC1_RINKEBY, DTC2_RINKEBY } from '../../constants'
 // import { UNI, DTC1_RINKEBY } from '../../constants'
-import { UNI } from '../../constants'
+import { UNI, DAI_HECO_TESTNET } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -13,10 +13,10 @@ import { tryParseAmount } from '../swap/hooks'
 import { useTranslation } from 'react-i18next'
 
 // TODO:Daoswap Start Time
-export const STAKING_GENESIS = 1608267600
+export const STAKING_GENESIS = 1619362800
 
 // TODO:Daoswap Rewards Duration : unit - day
-export const REWARDS_DURATION_DAYS = 1
+export const REWARDS_DURATION_DAYS = 3
 
 // TODO add staking rewards addresses here
 export const STAKING_REWARDS_INFO: {
@@ -82,6 +82,12 @@ export const STAKING_REWARDS_INFO: {
     //   tokens: [WETH[ChainId.RINKEBY], DTC1_RINKEBY],
     //   stakingRewardAddress: '0x1097394f70E32EECf3160276011F3d188AA4465a'
     // }
+  ],
+  [ChainId.HECO_TESTNET]: [
+    {
+      tokens: [WETH[ChainId.HECO_TESTNET], DAI_HECO_TESTNET],
+      stakingRewardAddress: '0x3AfE15F5e693702F326d6a8793D59000CaB12864'
+    }
   ]
 }
 
