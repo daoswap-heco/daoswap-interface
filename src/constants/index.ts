@@ -50,6 +50,13 @@ export const DOI_HECO_TESTNET = new Token(
   'DOI',
   'Daoswap'
 )
+export const DAI_HECO_TESTNET = new Token(
+  ChainId.HECO_TESTNET,
+  '0x60d64Ef311a4F0E288120543A14e7f90E76304c6',
+  18,
+  'DAI',
+  'Dai Stablecoin'
+)
 
 // Block time here is slightly higher (~1s) than average in order to avoid ongoing proposals past the displayed time
 export const AVERAGE_BLOCK_TIME_IN_SECS = 14

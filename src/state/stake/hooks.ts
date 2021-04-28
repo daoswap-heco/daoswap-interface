@@ -5,7 +5,7 @@ import { useMemo } from 'react'
 // import { DAI, DOI_ROPSTEN, UNI, USDC, USDT, WBTC } from '../../constants'
 // import { UNI, NTC_RINKEBY, DTC1_RINKEBY, DTC2_RINKEBY } from '../../constants'
 // import { UNI, DTC1_RINKEBY } from '../../constants'
-import { UNI, DOI_HECO_TESTNET } from '../../constants'
+import { UNI, DOI_HECO_TESTNET, DAI_HECO_TESTNET } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -85,8 +85,12 @@ export const STAKING_REWARDS_INFO: {
   ],
   [ChainId.HECO_TESTNET]: [
     {
-      tokens: [WETH[ChainId.HECO_TESTNET], DOI_HECO_TESTNET],
+      tokens: [WETH[ChainId.HECO_TESTNET], DAI_HECO_TESTNET],
       stakingRewardAddress: '0xED889Bd744bfb262bE0c9090510A834082f6fd54'
+    },
+    {
+      tokens: [WETH[ChainId.HECO_TESTNET], DOI_HECO_TESTNET],
+      stakingRewardAddress: '0x40E9725C17403A8c1B3acCBbD596ea6EFc24DdF6'
     }
   ]
 }
