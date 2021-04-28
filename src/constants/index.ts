@@ -43,12 +43,12 @@ export const DTC2_RINKEBY = new Token(
   'DTC2',
   'Daoswap Test Coin 2'
 )
-export const DAI_HECO_TESTNET = new Token(
+export const DOI_HECO_TESTNET = new Token(
   ChainId.HECO_TESTNET,
-  '0x60d64Ef311a4F0E288120543A14e7f90E76304c6',
+  '0xf9566aD895BfB111034C8625C65B03836c697479',
   18,
-  'DAI',
-  'Dai Stablecoin'
+  'DOI',
+  'Daoswap'
 )
 
 // Block time here is slightly higher (~1s) than average in order to avoid ongoing proposals past the displayed time
@@ -60,7 +60,7 @@ export const GOVERNANCE_ADDRESS = '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F'
 
 export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
 
-const UNI_ADDRESS = '0x29Ac4ed3Ad8457B6Fb75B336D688C9094AD08B4b'
+const UNI_ADDRESS = '0xf9566aD895BfB111034C8625C65B03836c697479'
 export const DOI_ADDRESS = UNI_ADDRESS
 export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
