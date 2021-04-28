@@ -6,6 +6,14 @@
   "tokens": [
     {
       "chainId": 256,
+      "address": "0xf9566aD895BfB111034C8625C65B03836c697479",
+      "name": "Daoswap",
+      "symbol": "DOI",
+      "decimals": 18,
+      "logoURI": "https://heco-app.daoswap.global/daoswap.svg"
+    },
+    {
+      "chainId": 256,
       "address": "0x60d64Ef311a4F0E288120543A14e7f90E76304c6",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
