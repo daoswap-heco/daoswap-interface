@@ -23,8 +23,8 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   4: 'rinkeby.',
   5: 'goerli.',
   42: 'kovan.',
-  128: 'heco-mainnet.',
-  256: 'heco-testnet.'
+  128: '',
+  256: 'testnet.'
 }
 
 export function getEtherscanLink(
@@ -32,7 +32,11 @@ export function getEtherscanLink(
   data: string,
   type: 'transaction' | 'token' | 'address' | 'block'
 ): string {
-  const prefix = `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`
+  let suffix = 'etherscan.io'
+  if (chainId === 128 || chainId === 256) {
+    suffix = 'hecoinfo.com'
+  }
+  const prefix = `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}${suffix}`
 
   switch (type) {
     case 'transaction': {
